@@ -7,6 +7,9 @@ requires-python = ">=3.11"
 authors = [{ name = "ellainng" }]
 dependencies = ["hidden-moves @ git+https://github.com/wispsy/hidden_moves.git@93ccf01dff12ade8ec204bb46abc300abaae9a3c"]
 
+[project.optional-dependencies]
+sequence = ["func-seq @ git+https://github.com/wispsy/func_seq.git@b1a5346feeeef3fa1f398e4dcd81c2d23345386c ; python_version >= '3.14'"]
+
 [project.urls]
 Source = "https://github.com/wispsy/moveset"
 Issues = "https://github.com/wispsy/moveset/issues"
@@ -17,4 +20,4 @@ requires = ["uv_build>=0.12.19,<0.13.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-source-include = ["tests/*.py", "scripts/*.py", "docs/*.md"]
+source-include = ["tests/*.py", "scripts/*.py", "docs/*.md", "lifecycle_tests/*.py"]
