@@ -5,7 +5,7 @@ description = "Explicit linear composition of selected Python capabilities."
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name = "ellainng" }]
-dependencies = ["hidden-moves @ git+https://github.com/wispsy/hidden_moves.git@697e1563ab46892a2d5c9b1a81cfe15797b959e9"]
+dependencies = ["hidden-moves @ git+https://github.com/wispsy/hidden_moves.git@93ccf01dff12ade8ec204bb46abc300abaae9a3c"]
 
 [project.urls]
 Source = "https://github.com/wispsy/moveset"
