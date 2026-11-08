@@ -1,6 +1,8 @@
 [project]
 name = "moveset"
-version = "0.0.1.dev0"
+version = "0.1.0"
+license = "MIT"
+license-files = ["LICENSE"]
 description = "Explicit linear composition of selected Python capabilities."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -20,4 +22,4 @@ requires = ["uv_build>=0.12.19,<0.13.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-source-include = ["tests/*.py", "scripts/*.py", "docs/*.md", "lifecycle_tests/*.py"]
+source-include = ["LICENSE", "tests/*.py", "scripts/*.py", "docs/*.md", "lifecycle_tests/*.py"]
