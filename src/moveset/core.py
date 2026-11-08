@@ -10,7 +10,11 @@ import math
 import re
 from typing import Any
 
-from hidden_moves.adapters import CapabilityCatalog, validate_json_value
+from hidden_moves.adapters import CapabilityCatalog
+try:
+    from hidden_moves.adapters import validate_json_value
+except ImportError:
+    from ._validation import fallback_validate_json_value as validate_json_value
 
 MAX_BYTES = 1_048_576
 MAX_DEPTH = 32
